@@ -1,5 +1,6 @@
 package Activity01;
-
+import java.util.*;
+import java.lang.*;
 /**
  * Card.java
  *
@@ -34,8 +35,10 @@ public class Card {
      *                  containing the point value of the card
      */
     public Card(String cardRank, String cardSuit, int cardPointValue) {
-
-    }
+        cardRank = new String[] {"Ace", "King", "Queen", "Jack", "Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"};
+        cardSuit = new String[] {"Clubs","Diamonds","Hearts","Spades"};
+        cardPointValue = new int[] {1,2,3,4,5,6,7,8,9,10,11};
+        }
 
 
     /**
@@ -51,13 +54,17 @@ public class Card {
      * @return this <code>Card's</code> rank.
      */
     public String rank() {
+ 
+}
 
-    }
+    
+
 
    /**
      * Accesses this <code>Card's</code> point value.
      * @return this <code>Card's</code> point value.
      */
+
     public int pointValue() {
 
     }
