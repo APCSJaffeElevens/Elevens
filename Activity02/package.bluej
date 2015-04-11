@@ -1,14 +1,21 @@
 #BlueJ package file
+dependency1.from=Deck
+dependency1.to=Card
+dependency1.type=UsesDependency
 objectbench.height=100
-objectbench.width=357
+objectbench.width=658
 package.editor.height=400
 package.editor.width=560
-package.editor.x=70
-package.editor.y=180
-package.numDependencies=0
+package.editor.x=405
+package.editor.y=15
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=445
+target1.editor.y=35
 target1.height=50
 target1.name=Deck
 target1.showInterface=false
