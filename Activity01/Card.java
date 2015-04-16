@@ -34,11 +34,11 @@ public class Card {
      * @param cardPointValue an <code>int</code> value
      *                  containing the point value of the card
      */
-    public Card(String[] ranks , String[] suits, int[] values) {
-        ranks = new String[] {"Ace", "King", "Queen", "Jack", "Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"};
-        suits = new String[] {"Clubs","Diamonds","Hearts","Spades"};
-        values = new int[] {1,2,3,4,5,6,7,8,9,10,11};
-        }
+    public Card(String cardRank , String cardSuit, int cardPointValue) {
+      suit = cardSuit;
+      rank = cardRank;
+      pointValue = cardPointValue;
+    }
 
 
     /**
@@ -46,7 +46,7 @@ public class Card {
      * @return this <code>Card's</code> suit.
      */
     public String suit() {
-        
+        return suit;
     }
 
     /**
@@ -54,7 +54,7 @@ public class Card {
      * @return this <code>Card's</code> rank.
      */
     public String rank() {
- 
+ return rank;
 }
 
     
@@ -66,7 +66,7 @@ public class Card {
      */
 
     public int pointValue() {
-
+        return pointValue;
     }
 
     /** Compare this card with the argument.
@@ -76,7 +76,7 @@ public class Card {
      *         false otherwise.
      */
     public boolean matches(Card otherCard) {
-
+        return(rank== otherCard.rank() && suit == otherCard.suit() && pointValue == otherCard.pointValue());
     }
 
     /**
@@ -91,6 +91,6 @@ public class Card {
      */
     @Override
     public String toString() {
-
+        return (rank+ "of" + suit + " (" + pointValue + ")");
     }
 }
