@@ -1,3 +1,5 @@
+package Activity05.Buggy5;
+
 /**
  * Card.java
  *

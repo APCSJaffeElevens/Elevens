@@ -1,3 +1,5 @@
+package Activity05.Buggy5;
+
 /**
  * This is a class that tests the Deck class using assert statements.
  */
@@ -9,8 +11,8 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		test1CardDeck();
 		test2CardDeck();
+		test1CardDeck();
 		testShuffle();
 		System.out.println("All tests passed!");
 	}
