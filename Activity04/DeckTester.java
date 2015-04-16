@@ -54,5 +54,10 @@ public class DeckTester {
 		System.out.println();
 
 		/* *** TO BE COMPLETED IN ACTIVITY 4 *** */
+		String[] ranks2 = {"ace","2","3","4","5","6","7","8","9","10","jack", "queen", "king"};
+		String[] suits2 = {"spades", "diamonds", "hearts", "clubs"};
+		int[] pointValues2 = {15,2,3,4,5,6,7,8,9,10,10,10,10};
+		Deck d2 = new Deck(ranks2, suits2, pointValues2);
+		System.out.println("\nd2 toString:\n" + d2.toString());
 	}
 }
